@@ -68,25 +68,29 @@ export const sampleAccommodations: Accommodation[] = [
     },
     reviews: [
       {
-        id: '2',
-        userId: 'user2',
-        userName: '이영희',
-        date: '2024-03-14',
-        rating: 4.8,
-        aiRating: 4.5,
-        category: 'location',
-        categoryScore: 4.5,
-        comment: '위치가 정말 좋았어요.',
-        isVerified: true,
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 4.5,
-          value: 0
+      id: '1',
+      userId: 'user2',
+      userName: '이영희',
+      date: '2024-03-14',
+      rating: 4.8,
+      aiRating: 4.5,
+      comment: '호스트가 친절하고 체크인도 쉬웠어요! 그리고 위치가 정말 좋아서 서울 시청까지 도보로 이동 가능해요.',
+      isVerified: true,
+      categories: [
+        {
+          name: '위치',
+          score: 4.5,
+          aiScore: 4.2,
+          keywords: ['도보', '서울 시청', '좋아요']
+        },
+        {
+          name: '체크인',
+          score: 4.0,
+          aiScore: 4.1,
+          keywords: ['친절', '쉬웠어요']
         }
-      }
+  ]
+}
     ]
   },
   {
