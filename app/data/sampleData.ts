@@ -42,71 +42,7 @@ export const sampleAccommodations: Accommodation[] = [
           location: 0,
           value: 0
         }
-      },
-      {
-  id: '2',
-  userId: 'user2',
-  userName: '이영희',
-  date: '2024-03-18',
-  rating: 4.8,
-  aiRating: 4.5,
-  comment: '호스트가 친절하고 체크인도 쉬웠어요! 그리고 위치가 정말 좋아서 서울 시청까지 도보로 이동 가능해요.',
-  isVerified: true,
-  categories: [
-    {
-      name: 'location',
-      score: 4.5,
-      aiScore: 4.2,
-      keywords: ['도보', '서울 시청', '좋아요']
-    },
-    {
-      name: 'checkIn',
-      score: 4.0,
-      aiScore: 4.1,
-      keywords: ['친절', '쉬웠어요']
-    }
-  ],
-  categoryRatings: {
-    cleanliness: 0,
-    accuracy: 0,
-    checkIn: 4.0,
-    communication: 0,
-    location: 4.5,
-    value: 0
-  }
-},
-{
-  id: '3',
-  userId: 'user3',
-  userName: '박민수',
-  date: '2024-03-20',
-  rating: 4.2,
-  aiRating: 4.0,
-  comment: '가성비도 좋고 청결해서 만족했습니다.',
-  isVerified: true,
-  categories: [
-    {
-      name: 'value',
-      score: 4.5,
-      aiScore: 4.3,
-      keywords: ['가성비', '좋아요']
-    },
-    {
-      name: 'cleanliness',
-      score: 4.2,
-      aiScore: 4.0,
-      keywords: ['청결', '만족']
-    }
-  ],
-  categoryRatings: {
-    cleanliness: 4.2,
-    accuracy: 0,
-    checkIn: 0,
-    communication: 0,
-    location: 0,
-    value: 4.5
-  }
-}
+      }
     ]
   },
   {
@@ -132,29 +68,25 @@ export const sampleAccommodations: Accommodation[] = [
     },
     reviews: [
       {
-      id: '1',
-      userId: 'user2',
-      userName: '이영희',
-      date: '2024-03-14',
-      rating: 4.8,
-      aiRating: 4.5,
-      comment: '호스트가 친절하고 체크인도 쉬웠어요! 그리고 위치가 정말 좋아서 서울 시청까지 도보로 이동 가능해요.',
-      isVerified: true,
-      categories: [
-        {
-          name: '위치',
-          score: 4.5,
-          aiScore: 4.2,
-          keywords: ['도보', '서울 시청', '좋아요']
-        },
-        {
-          name: '체크인',
-          score: 4.0,
-          aiScore: 4.1,
-          keywords: ['친절', '쉬웠어요']
+        id: '2',
+        userId: 'user2',
+        userName: '이영희',
+        date: '2024-03-14',
+        rating: 4.8,
+        aiRating: 4.5,
+        category: 'location',
+        categoryScore: 4.5,
+        comment: '위치가 정말 좋았어요.',
+        isVerified: true,
+        categoryRatings: {
+          cleanliness: 0,
+          accuracy: 0,
+          checkIn: 0,
+          communication: 0,
+          location: 4.5,
+          value: 0
         }
-  ]
-}
+      }
     ]
   },
   {
