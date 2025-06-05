@@ -80,7 +80,7 @@ const CategoryDetailClient: React.FC<CategoryDetailClientProps> = ({ id, categor
         }
       },
       {
-        id: '2',
+        id: '1',
         userId: 'user2',
         userName: '이영희',
         rating: 4.0,
@@ -100,7 +100,7 @@ const CategoryDetailClient: React.FC<CategoryDetailClientProps> = ({ id, categor
         }
       },
       {
-        id: '3',
+        id: '1',
         userId: 'user3',
         userName: '박지민',
         rating: 4.1,
