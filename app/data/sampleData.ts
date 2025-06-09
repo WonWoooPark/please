@@ -22,581 +22,189 @@ export const sampleAccommodations: Accommodation[] = [
       location: { rating: 4.4, aiRating: 4.1 },
       value: { rating: 4.0, aiRating: 3.7 }
     },
-    reviews: [
-      {
-        id: '1',
-        userId: 'user1',
-        userName: '김철수',
-        date: '2024-03-15',
-        rating: 5.0,
-        aiRating: 4.2,
-        category: 'cleanliness',
-        categoryScore: 5.0,
-        comment: '꽤나 깨끗하고 지낼만 했던 숙소입니다!.',
-        isVerified: true,
-        categoryRatings: {
-          cleanliness: 4.2,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 0,
-          value: 0
-        }
-      },
-      {
-        id: '2-checkIn',
-        userId: 'user2',
-        userName: '이영희',
-        date: '2024-03-18',
-        rating: 4.8,
-        aiRating: 4.5,
-        comment: '체크인이 정말 편리했고, 위치도 나쁘지 않습니다. 다만 가격이 조금 비싸다고 느꼈어요.',
-        isVerified: true,
-        category: 'checkIn',
-        categoryScore: 5.0,
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 5.0,
-          communication: 0,
-          location: 4.0,
-          value: 2.5
-        }
-      },
-      {
-        id: '2-location',
-        userId: 'user2',
-        userName: '이영희',
-        date: '2024-03-18',
-        rating: 4.8,
-        aiRating: 4.5,
-        comment: '체크인이 정말 편리했고, 위치도 나쁘지 않습니다. 다만 가격이 조금 비싸다고 느꼈어요.',
-        isVerified: true,
-        category: 'location',
-        categoryScore: 4.0,
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 5.0,
-          communication: 0,
-          location: 4.0,
-          value: 2.5
-        }
-        },
-        {
-          id: '3-location',
-          userId: 'user2',
-          userName: '이영희',
-          date: '2024-03-18',
-          rating: 4.8,
-          aiRating: 4.5,
-          comment: '체크인이 정말 편리했고, 위치도 나쁘지 않습니다. 다만 가격이 조금 비싸다고 느꼈어요.',
-          isVerified: true,
-          category: 'value',
-          categoryScore: 2.5,
-          categoryRatings: {
-            cleanliness: 0,
-            accuracy: 0,
-            checkIn: 5.0,
-            communication: 0,
-            location: 4.0,
-            value: 2.5
-          }
-      },
-      {
-        id: '6',
-        userId: 'user6',
-        userName: '이준호',
-        date: '2024-03-27',
-        rating: 4.6,
-        aiRating: 4.3,
-        comment: '호스트가 친절하고 의사소통이 빨라서 좋았어요. 위치도 만족!',
-        isVerified: true,
-        category: 'communication',
-        categoryScore: 4.7,
-        categories: [
-          {
-            name: 'communication',
-            score: 4.7,
-            aiScore: 4.5,
-            keywords: ['친절', '빠름']
-          },
-          {
-            name: 'location',
-            score: 4.5,
-            aiScore: 4.2,
-            keywords: ['위치', '만족']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 4.7,
-          location: 4.5,
-          value: 0
-        }
-      },
-      {
-        id: '7',
-        userId: 'user7',
-        userName: '박서준',
-        date: '2024-03-28',
-        rating: 4.9,
-        aiRating: 4.7,
-        comment: '체크인 안내가 자세해서 편하게 입실했습니다. 청결도도 최고!',
-        isVerified: true,
-        category: 'checkIn',
-        categoryScore: 5.0,
-        categories: [
-          {
-            name: 'checkIn',
-            score: 5.0,
-            aiScore: 4.8,
-            keywords: ['체크인', '안내', '편함']
-          },
-          {
-            name: 'cleanliness',
-            score: 5.0,
-            aiScore: 4.7,
-            keywords: ['청결', '최고']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 5.0,
-          accuracy: 0,
-          checkIn: 5.0,
-          communication: 0,
-          location: 0,
-          value: 0
-        }
-      },
-      {
-        id: '8',
-        userId: 'user8',
-        userName: '정유진',
-        date: '2024-03-29',
-        rating: 4.3,
-        aiRating: 4.0,
-        comment: '가성비가 좋아서 출장 때 자주 이용할 것 같아요.',
-        isVerified: true,
-        category: 'value',
-        categoryScore: 4.5,
-        categories: [
-          {
-            name: 'value',
-            score: 4.5,
-            aiScore: 4.3,
-            keywords: ['가성비', '출장']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 0,
-          value: 4.5
-        }
-      },
-      {
-        id: '9',
-        userId: 'user9',
-        userName: '오세훈',
-        date: '2024-03-30',
-        rating: 4.7,
-        aiRating: 4.4,
-        comment: '시설이 새것 같고, 주변에 맛집도 많아요!',
-        isVerified: true,
-        category: 'cleanliness',
-        categoryScore: 4.8,
-        categories: [
-          {
-            name: 'cleanliness',
-            score: 4.8,
-            aiScore: 4.5,
-            keywords: ['시설', '새것']
-          },
-          {
-            name: 'location',
-            score: 4.6,
-            aiScore: 4.3,
-            keywords: ['맛집', '주변']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 4.8,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 4.6,
-          value: 0
-        }
-      },
-      {
-        id: '10',
-        userId: 'user10',
-        userName: '김하늘',
-        date: '2024-04-01',
-        rating: 4.1,
-        aiRating: 3.9,
-        comment: '방이 생각보다 좁았지만, 위치는 최고입니다.',
-        isVerified: true,
-        category: 'location',
-        categoryScore: 5.0,
-        categories: [
-          {
-            name: 'location',
-            score: 5.0,
-            aiScore: 4.8,
-            keywords: ['위치', '최고']
-          },
-          {
-            name: 'value',
-            score: 3.5,
-            aiScore: 3.0,
-            keywords: ['좁음']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 5.0,
-          value: 3.5
-        }
-      },
-      {
-        id: '11',
-        userId: 'user11',
-        userName: '이수민',
-        date: '2024-04-02',
-        rating: 4.5,
-        aiRating: 4.2,
-        comment: '청결도와 위치 모두 만족! 다음에도 또 이용하고 싶어요.',
-        isVerified: true,
-        category: 'cleanliness',
-        categoryScore: 4.7,
-        categories: [
-          {
-            name: 'cleanliness',
-            score: 4.7,
-            aiScore: 4.3,
-            keywords: ['청결', '만족']
-          },
-          {
-            name: 'location',
-            score: 4.6,
-            aiScore: 4.2,
-            keywords: ['위치', '만족']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 4.7,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 4.6,
-          value: 0
-        }
-      },
-      {
-        id: '12',
-        userId: 'user12',
-        userName: '박지훈',
-        date: '2024-04-03',
-        rating: 4.0,
-        aiRating: 3.8,
-        comment: '체크인 과정이 조금 복잡했지만, 호스트가 잘 안내해주셨어요.',
-        isVerified: true,
-        category: 'checkIn',
-        categoryScore: 3.5,
-        categories: [
-          {
-            name: 'checkIn',
-            score: 3.5,
-            aiScore: 3.2,
-            keywords: ['체크인', '복잡']
-          },
-          {
-            name: 'communication',
-            score: 4.5,
-            aiScore: 4.0,
-            keywords: ['안내', '호스트']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 3.5,
-          communication: 4.5,
-          location: 0,
-          value: 0
-        }
-      },
-      {
-        id: '13',
-        userId: 'user13',
-        userName: '정민수',
-        date: '2024-04-04',
-        rating: 4.3,
-        aiRating: 4.0,
-        comment: '가성비와 청결 모두 만족! 추천합니다.',
-        isVerified: true,
-        category: 'value',
-        categoryScore: 4.5,
-        categories: [
-          {
-            name: 'value',
-            score: 4.5,
-            aiScore: 4.2,
-            keywords: ['가성비', '만족']
-          },
-          {
-            name: 'cleanliness',
-            score: 4.3,
-            aiScore: 4.0,
-            keywords: ['청결', '추천']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 4.3,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 0,
-          value: 4.5
-        }
-      },
-      {
-        id: '14',
-        userId: 'user14',
-        userName: '이하늘',
-        date: '2024-04-05',
-        rating: 4.8,
-        aiRating: 4.6,
-        comment: '호스트가 정말 친절하고, 숙소도 쾌적했습니다.',
-        isVerified: true,
-        category: 'communication',
-        categoryScore: 4.9,
-        categories: [
-          {
-            name: 'communication',
-            score: 4.9,
-            aiScore: 4.7,
-            keywords: ['친절', '호스트']
-          },
-          {
-            name: 'cleanliness',
-            score: 4.8,
-            aiScore: 4.5,
-            keywords: ['쾌적', '숙소']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 4.8,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 4.9,
-          location: 0,
-          value: 0
-        }
-      },
-      {
-        id: '15',
-        userId: 'user15',
-        userName: '김지수',
-        date: '2024-04-06',
-        rating: 4.2,
-        aiRating: 4.0,
-        comment: '위치가 좋아서 서울 시내 이동이 편리했어요.',
-        isVerified: true,
-        category: 'location',
-        categoryScore: 4.6,
-        categories: [
-          {
-            name: 'location',
-            score: 4.6,
-            aiScore: 4.3,
-            keywords: ['위치', '이동', '편리']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 4.6,
-          value: 0
-        }
-      },
-      {
-        id: '16',
-        userId: 'user16',
-        userName: '박하늘',
-        date: '2024-04-07',
-        rating: 4.4,
-        aiRating: 4.1,
-        comment: '청결도와 체크인 모두 만족! 다음에도 또 이용할게요.',
-        isVerified: true,
-        category: 'cleanliness',
-        categoryScore: 4.5,
-        categories: [
-          {
-            name: 'cleanliness',
-            score: 4.5,
-            aiScore: 4.2,
-            keywords: ['청결', '만족']
-          },
-          {
-            name: 'checkIn',
-            score: 4.4,
-            aiScore: 4.0,
-            keywords: ['체크인', '만족']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 4.5,
-          accuracy: 0,
-          checkIn: 4.4,
-          communication: 0,
-          location: 0,
-          value: 0
-        }
-      },
-      {
-        id: '17',
-        userId: 'user17',
-        userName: '이민호',
-        date: '2024-04-08',
-        rating: 4.7,
-        aiRating: 4.5,
-        comment: '가성비 최고! 위치도 좋아요.',
-        isVerified: true,
-        category: 'value',
-        categoryScore: 4.8,
-        categories: [
-          {
-            name: 'value',
-            score: 4.8,
-            aiScore: 4.6,
-            keywords: ['가성비', '최고']
-          },
-          {
-            name: 'location',
-            score: 4.7,
-            aiScore: 4.5,
-            keywords: ['위치', '좋아요']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 4.7,
-          value: 4.8
-        }
-      },
-      {
-        id: '18',
-        userId: 'user18',
-        userName: '최유진',
-        date: '2024-04-09',
-        rating: 4.3,
-        aiRating: 4.0,
-        comment: '체크인도 빠르고, 숙소가 조용해서 좋았어요.',
-        isVerified: true,
-        category: 'checkIn',
-        categoryScore: 4.6,
-        categories: [
-          {
-            name: 'checkIn',
-            score: 4.6,
-            aiScore: 4.3,
-            keywords: ['체크인', '빠름']
-          },
-          {
-            name: 'cleanliness',
-            score: 4.2,
-            aiScore: 4.0,
-            keywords: ['조용', '숙소']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 4.2,
-          accuracy: 0,
-          checkIn: 4.6,
-          communication: 0,
-          location: 0,
-          value: 0
-        }
-      },
-      {
-        id: '19',
-        userId: 'user19',
-        userName: '김민재',
-        date: '2024-04-10',
-        rating: 4.5,
-        aiRating: 4.2,
-        comment: '호스트가 친절해서 문의에 바로 답변해주셨어요.',
-        isVerified: true,
-        category: 'communication',
-        categoryScore: 4.8,
-        categories: [
-          {
-            name: 'communication',
-            score: 4.8,
-            aiScore: 4.5,
-            keywords: ['친절', '답변', '호스트']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 0,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 4.8,
-          location: 0,
-          value: 0
-        }
-      },
-      {
-        id: '20',
-        userId: 'user20',
-        userName: '박지민',
-        date: '2024-04-11',
-        rating: 4.6,
-        aiRating: 4.3,
-        comment: '청결도와 위치 모두 만족! 재방문 의사 있습니다.',
-        isVerified: true,
-        category: 'cleanliness',
-        categoryScore: 4.7,
-        categories: [
-          {
-            name: 'cleanliness',
-            score: 4.7,
-            aiScore: 4.4,
-            keywords: ['청결', '만족']
-          },
-          {
-            name: 'location',
-            score: 4.6,
-            aiScore: 4.3,
-            keywords: ['위치', '재방문']
-          }
-        ],
-        categoryRatings: {
-          cleanliness: 4.7,
-          accuracy: 0,
-          checkIn: 0,
-          communication: 0,
-          location: 4.6,
-          value: 0
-        }
+    "reviews": [
+    {
+      "id": "1",
+      "userId": "user1",
+      "userName": "김철수",
+      "date": "2024-03-15",
+      "rating": 5.0,
+      "aiRating": 4.2,
+      "category": "cleanliness",
+      "categoryScore": 5.0,
+      "comment": "꽤나 깨끗하고 지낼만 했던 숙소입니다!.",
+      "isVerified": true,
+      "categoryRatings": {
+        "cleanliness": 4.2,
+        "accuracy": 0,
+        "checkIn": 0,
+        "communication": 0,
+        "location": 0,
+        "value": 0
       }
-    ]
-  },
+    },
+    {
+      "id": "2-checkIn",
+      "userId": "user2",
+      "userName": "이영희",
+      "date": "2024-03-18",
+      "rating": 4.8,
+      "aiRating": 4.5,
+      "comment": "체크인이 정말 편리했고, 위치도 나쁘지 않습니다. 다만 가격이 조금 비싸다고 느꼈어요.",
+      "isVerified": true,
+      "category": "checkIn",
+      "categoryScore": 5.0,
+      "categoryRatings": {
+        "cleanliness": 0,
+        "accuracy": 0,
+        "checkIn": 5.0,
+        "communication": 0,
+        "location": 4.0,
+        "value": 2.5
+      }
+    },
+    {
+      "id": "2-cleanliness",
+      "userId": "user2",
+      "userName": "이영자",
+      "date": "2024-03-18",
+      "rating": 4.8,
+      "aiRating": 4.5,
+      "comment": "청소 상태가 정말 깔끔했어요!",
+      "isVerified": true,
+      "category": "cleanliness",
+      "categoryScore": 5.0,
+      "categoryRatings": {
+        "cleanliness": 5.0,
+        "accuracy": 0,
+        "checkIn": 0,
+        "communication": 0,
+        "location": 0,
+        "value": 0
+      }
+    },
+    {
+      "id": "2-accuracy",
+      "userId": "user2",
+      "userName": "이영수",
+      "date": "2024-03-18",
+      "rating": 4.7,
+      "aiRating": 4.4,
+      "comment": "사진과 똑같았고, 설명도 정확했어요.",
+      "isVerified": true,
+      "category": "accuracy",
+      "categoryScore": 4.8,
+      "categoryRatings": {
+        "cleanliness": 0,
+        "accuracy": 4.8,
+        "checkIn": 0,
+        "communication": 0,
+        "location": 0,
+        "value": 0
+      }
+    },
+    {
+      "id": "2-communication",
+      "userId": "user2",
+      "userName": "양현종",
+      "date": "2024-03-18",
+      "rating": 4.9,
+      "aiRating": 4.6,
+      "comment": "호스트와의 소통이 빨라서 좋았어요.",
+      "isVerified": true,
+      "category": "communication",
+      "categoryScore": 5.0,
+      "categoryRatings": {
+        "cleanliness": 0,
+        "accuracy": 0,
+        "checkIn": 0,
+        "communication": 5.0,
+        "location": 0,
+        "value": 0
+      }
+    },
+    {
+      "id": "2-value",
+      "userId": "user2",
+      "userName": "박주형",
+      "date": "2024-03-18",
+      "rating": 4.7,
+      "aiRating": 4.5,
+      "comment": "가격 대비 만족도가 높았어요.",
+      "isVerified": true,
+      "category": "value",
+      "categoryScore": 4.5,
+      "categoryRatings": {
+        "cleanliness": 0,
+        "accuracy": 0,
+        "checkIn": 0,
+        "communication": 0,
+        "location": 0,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "2-location2",
+      "userId": "user2",
+      "userName": "호날두",
+      "date": "2024-03-18",
+      "rating": 4.9,
+      "aiRating": 4.6,
+      "comment": "역과 가까워서 교통이 편리했어요.",
+      "isVerified": true,
+      "category": "location",
+      "categoryScore": 5.0,
+      "categoryRatings": {
+        "cleanliness": 0,
+        "accuracy": 0,
+        "checkIn": 0,
+        "communication": 0,
+        "location": 5.0,
+        "value": 0
+      }
+    },
+    {
+      "id": "2-location",
+      "userId": "user2",
+      "userName": "이영희",
+      "date": "2024-03-18",
+      "rating": 4.8,
+      "aiRating": 4.5,
+      "comment": "체크인이 정말 편리했고, 위치도 나쁘지 않습니다. 다만 가격이 조금 비싸다고 느꼈어요.",
+      "isVerified": true,
+      "category": "location",
+      "categoryScore": 4.0,
+      "categoryRatings": {
+        "cleanliness": 0,
+        "accuracy": 0,
+        "checkIn": 5.0,
+        "communication": 0,
+        "location": 4.0,
+        "value": 2.5
+      }
+    },
+    {
+      "id": "3-location",
+      "userId": "user2",
+      "userName": "이영희",
+      "date": "2024-03-18",
+      "rating": 4.8,
+      "aiRating": 4.5,
+      "comment": "체크인이 정말 편리했고, 위치도 나쁘지 않습니다. 다만 가격이 조금 비싸다고 느꼈어요.",
+      "isVerified": true,
+      "category": "value",
+      "categoryScore": 2.5,
+      "categoryRatings": {
+        "cleanliness": 0,
+        "accuracy": 0,
+        "checkIn": 5.0,
+        "communication": 0,
+        "location": 4.0,
+        "value": 2.5
+      }
+    }
+  ]
+},
   {
     id: '2',
     title: '강남 스타일 원룸',
