@@ -595,7 +595,7 @@ export const sampleAccommodations: Accommodation[] = [
           value: 0
         }
       }
-    ])
+    ]
   },
   {
     id: '2',
